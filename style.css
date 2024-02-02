@@ -1,0 +1,278 @@
+*{
+    font-family: sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #d8cfc6;
+}
+footer {
+    margin-top: auto;
+}
+a {
+    text-decoration: none;
+}
+
+input{
+    display: block;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: 1px solid  #9bbbfc;
+}
+
+    
+.btn-login:hover{
+    color:black;
+}
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    max-width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+
+.job-title {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.work-experience {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience-item {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.navbar {
+    background-color: #fff;
+    height: 70px;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+.navbar h3{
+    font-weight: bold;
+}
+.navbar-brand {
+    font-weight: 500;
+    color: #d9eff7;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+.hero-section {
+    background: url('img/portfolio-bg.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1{
+    font-size: 6.6em;
+}
+
+.hero-section h2 {
+    font-size: 6.2em;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 260px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.w-100{
+    height: 100vh;
+}
+
+.card{
+    border-radius: 20px;
+}
+.card h5{
+    font-weight: bold;
+}
+.card p{
+    text-align: justify;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title .card-text {
+    margin-bottom: 0;
+}
+.aboutme .card{
+    border-radius: 20px;
+}
+.aboutme .card-img-top {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+}
+.aboutme .card h5{
+    font-weight: bold;
+}
+.aboutme .card p{
+    text-align: justify;
+}
+.aboutme .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutme.card-title, .card-text {
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .card-body {
+        text-align: center;
+    }
+}
+
+.btn-primary:hover{
+    background-color: #000
+}
+.aboutme p{
+    text-align:justify;
+}   
+
+
+@media only screen and(min-width:768px) and (max-width:991px) {
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:768px){
+    .navbar{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+}
+
